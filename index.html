@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de,eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>germanistan - Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'DM Sans', sans-serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            border-bottom: 2px solid black;
+            text-align: left;
+            font-family: 'Oswald', cursive;
+            font-size: 36px;
+            color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar {
+            position: fixed;
+            top: 10px;
+            right: 0;
+            padding: 10px 20px;
+            background-color: white;
+            border: 2px solid black;
+            font-size: 16px;
+            z-index: 1002;
+            margin-right: 10px;
+        }
+        .navbar a {
+            margin-left: 20px;
+            font-family: 'Pinyon Script', cursive;
+            text-decoration: none;
+            color: black;
+        }
+        .navbar a:hover {
+            color: red;
+        }
+        .content {
+            flex: 1;
+            padding: 80px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-container {
+            width: 90%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            display: flex;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            position: relative;
+        }
+        .product-image {
+            width: 40%;
+            max-width: 300px;
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .product-details {
+            padding: 20px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .product-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+        .fixed-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Pinyon Script', cursive;
+            font-size: 100px;
+            color: rgba(255, 0, 0, 0.5);
+            z-index: 1001;
+            pointer-events: none;
+        }
+        .footer {
+            padding: 10px 0;
+            font-family: 'DM Sans', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: italic;
+            text-align: left;
+            color: black;
+            font-size: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Shop</div>
+    <div class="navbar">
+        <a href="https://r2shine.de/archive">Archive</a>
+        <a href="https://r2shine.de">Landing</a>
+        <a href="https://r2shine.de/about">Germanistan</a>
+    </div>
+    <div class="content">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="https://i.pinimg.com/564x/c0/c8/89/c0c889710e1cd2268554f9a7f9145a6b.jpg" alt="Product 1">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Product 1</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.</div>
+                <div class="product-price">€20.00</div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="https://i.pinimg.com/564x/c0/c8/89/c0c889710e1cd2268554f9a7f9145a6b.jpg" alt="Product 2">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Product 2</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.</div>
+                <div class="product-price">€30.00</div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="https://i.pinimg.com/564x/c0/c8/89/c0c889710e1cd2268554f9a7f9145a6b.jpg" alt="Product 3">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Product 3</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula elit at eros vestibulum, at ullamcorper turpis fringilla.</div>
+                <div class="product-price">€25.00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">&copy; 2024 germanistan. all rights reserved.</div>
+</body>
+</html>
